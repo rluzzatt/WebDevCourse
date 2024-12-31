@@ -1,3 +1,3 @@
-$("body").keydown(function(e) {
-$("h1").text(e.key);
+$("body").keydown(function (e) {
+    $("h1").text(e.key);
 });

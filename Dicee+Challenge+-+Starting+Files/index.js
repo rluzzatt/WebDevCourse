@@ -16,5 +16,5 @@ if (random1 > random2) {
 } else if (random2 > random1) {
   document.querySelector("h1").textContent = "Player 2 Wins! 🚩";
 } else {
-  document.querySelector("h1").textContent = "Draw!";
+  document.querySelector("h1").textContent = "Draw! 💕";
 }
