@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+
+.caveat {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#main-image {
+    border: 5px solid aliceblue;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#main-div{
+    width: 50% ;
+    margin-left: 25%;
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+
+}
