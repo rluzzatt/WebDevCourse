@@ -1,4 +1,3 @@
-
 var buttonColours = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
@@ -7,7 +6,9 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function () {
+// Detect user interaction to start the game
+$("#level-title").on("touchstart click", function (event) {
+    event.preventDefault(); // Prevent duplicate events
     if (!started) {
         $("#level-title").text("Level " + level);
         setTimeout(function () {
@@ -17,7 +18,9 @@ $(document).keypress(function () {
     }
 });
 
-$(".btn").click(function () {
+// Detect button presses
+$(".btn").on("touchstart click", function (event) {
+    event.preventDefault(); // Prevent duplicate events
 
     var userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
@@ -28,34 +31,24 @@ $(".btn").click(function () {
     checkAnswer(userClickedPattern.length - 1);
 });
 
-
 function checkAnswer(currentLevel) {
-
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-
         console.log("success");
 
         if (userClickedPattern.length === gamePattern.length) {
-
             setTimeout(function () {
                 nextSequence();
             }, 1000);
-
         }
-
     } else {
-
         console.log("wrong");
         playSound("wrong");
         gameOver();
     }
-
 }
 
 function nextSequence() {
-
     userClickedPattern = [];
-
     level++;
     $("#level-title").text("Level " + level);
 
@@ -85,7 +78,7 @@ function gameOver() {
         $("body").removeClass("game-over");
     }, 300);
 
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#level-title").text("Game Over, Tap Here to Restart");
 
     startOver();
 }
@@ -94,5 +87,4 @@ function startOver() {
     level = 0;
     started = false;
     gamePattern = [];
-
 }

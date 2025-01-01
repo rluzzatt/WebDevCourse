@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
@@ -14,7 +14,6 @@ body {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -24,6 +23,8 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+  background-size: cover; /* Ensure images cover the button */
+  background-position: center; /* Center the image */
 }
 
 .game-over {
@@ -32,22 +33,22 @@ body {
 }
 
 .red {
-  background-color: red;
+  background-image: url('images/ella.jpg'); /* Replace with your image path */
 }
 
 .green {
-  background-color: green;
+  background-image: url('images/milki.jpg'); /* Replace with your image path */
 }
 
 .blue {
-  background-color: blue;
+  background-image: url('images/ofir.jpg'); /* Replace with your image path */
 }
 
 .yellow {
-  background-color: yellow;
+  background-image: url('images/tofi.jpg'); /* Replace with your image path */
 }
 
 .pressed {
   box-shadow: 0 0 20px white;
-  background-color: grey;
+  filter: brightness(70%); /* Dim the image when pressed */
 }
