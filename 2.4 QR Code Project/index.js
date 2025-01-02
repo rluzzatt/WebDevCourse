@@ -13,6 +13,11 @@ inquirer
             type: 'input',
             name: 'name',
             message: 'enter url:',
+        },
+        {
+            type: 'input',
+            name: 'name2',
+            message: 'enter url2:',
         }
     ])
     .then((answers) => {
