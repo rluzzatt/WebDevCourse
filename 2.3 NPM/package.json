@@ -1,0 +1,17 @@
+{
+  "name": "learning-npm",
+  "version": "1.0.0",
+  "description": "learnning",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ran",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^12.3.0",
+    "sillyname": "^0.1.0",
+    "superheros": "^1.0.0"
+  }
+}
